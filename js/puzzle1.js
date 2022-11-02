@@ -1,3 +1,3 @@
 function puzzle1() {
-  window.location = "puzzles/maze.html";
+  window.location = "puzzles/slider.html";
 }
