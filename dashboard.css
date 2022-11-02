@@ -365,8 +365,12 @@ body{
 .progressBar{
   background-color: #7542d1;
   text-align:center;
-  width:20%;
+  width:0%;
 }
 .light-grey{
   background-color: lightgrey;
+  width: 70%;
+}
+.progressContainer{
+  margin-left:25%;;
 }
