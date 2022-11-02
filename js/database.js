@@ -3,10 +3,6 @@ const table = document.getElementById("locationsTable");
 function loadLocationsTableData(country_data) {
     country_data.ref_country_codes.forEach( item => {
       let row = table.insertRow();
-      row.insertCell(0).innerHTML = item.country;
-      row.insertCell(1).innerHTML = item.alpha3;
-      row.insertCell(2).innerHTML = item.latitude;
-      row.insertCell(2).innerHTML = item.longitude;
 
       if (item.country == "Chad") {
         row.insertCell(0).innerHTML = item.country;
