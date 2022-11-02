@@ -34,3 +34,14 @@
     .sidenav a {font-size: 18px;}
   }
   
+/* AI bot */
+.aiBubble {
+  width: 120px; 
+  height: 80px; 
+  background: #5ac4ed;
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  border-radius: 10px;
+  text-align: center;
+}
