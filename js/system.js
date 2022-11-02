@@ -9,7 +9,7 @@ var items = [
 
 items.push({date: new Date().toLocaleString(), notes: "Admin has logged in", status: "Log in"})
 
-function loadTableData(items) {
+function loadLogTableData(items) {
     items.reverse().forEach( item => {
       let row = table.insertRow();
       row.insertCell(0).innerHTML = item.date;
@@ -18,4 +18,4 @@ function loadTableData(items) {
     });
 }
 
-loadTableData(items);
+loadLogTableData(items);
