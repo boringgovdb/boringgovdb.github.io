@@ -1,0 +1,53 @@
+body {
+  background: black;
+  text-align: center;
+  }
+
+
+.neonBox{
+  width: 500px;
+  margin: auto;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  width: 50%;
+  border: 0.2rem solid #fff;
+  background-color: rgb(39, 39, 39);  
+  border-radius: 1rem;
+}
+
+.neonText {  
+  color: #fff;
+  font-size: 70px;
+}
+
+h1{
+  animation: pulsate 0.11s ease-in-out infinite alternate;  
+  font-size: 60px; 
+}
+
+
+.password, .username{  
+  color:#000000;
+  padding-left: 15px;
+  border: 0.1rem solid #fff;
+  background-color: white;
+  border-radius: 1rem;
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+}
+
+::placeholder { 
+  color: grey;
+  opacity: 0.5; 
+}
+
+.enterButton{
+  font-size: 16px;
+  margin-top: 15px;  
+  border: 0.1rem solid #fff;
+  background-color: white;
+  border-radius: 1rem;
+  width: 215px;
+  height: 40px;
+}
