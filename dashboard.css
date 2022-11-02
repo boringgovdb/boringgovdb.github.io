@@ -45,6 +45,44 @@
 .allCharts{
     width: 1000px;
 }
+
+/* Code for system stats*/
+.alert{
+    color: red;
+}
+.warning{
+    color:orange;
+}
+#logTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #logTable td, #logTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #logTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #logTable tr:hover {background-color: #ddd;}
+  
+  #logTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7542d1;
+    color: white;
+  }
+  .dangerButton{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 0px;
+  }
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
