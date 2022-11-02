@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="dashboard.css">
+        <div class="sidenav">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="summary.html">Summary</a>
+            <a href="system.html">System status</a>
+            <a href="database.html">Database</a>
+            <a href="logout.html">Logout</a>
+        </div> 
+    <body class="main">
+        <h1>System status</h1>
+        <!-- Add some css here to make it red and orange-->
+        <div class="alert"><strong>DANGER!</strong> AI has started trying to access database.</div>
+        <div class="warning"><strong>WARNING!</strong> AI has gone ROGUE!</div>
+
+        <h2>Logs</h2>
+        <table id="logTable">
+            <tr>
+              <th>Time</th>
+              <th>Notes</th>
+              <th>Status</th>
+            </tr>
+        </table>
+    </body>
+</html>
+
+<script type="text/javascript" src="js/puzzle2.js"></script>
+<script type="text/javascript" src="js/system.js"></script>

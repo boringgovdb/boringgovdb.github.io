@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<script src="index.js"></script>
 <html>
-    <body>
-        <form action="/dashboard.html">
-            <div><h1>Login</h1></div>            
-            <label for="fname">Password:</label><br>
-            <input type="text" id="password" name="password" value=""><br><br/>
-            <input type="submit" value="Enter">
-        </form>
+    <link rel="stylesheet" href="index.css">
+    <body class="main">
+            <div class='box'>
+                <h1 class="loginText">Login</h1>
+                <input class="username" placeholder="Username:" type="text" id="username" name="username" value=""/> <br><br/>            
+                <input class="password" placeholder="Password:" type="text" id="password" name="password" value=""/><br><br/>
+                <input type="button" class="enterButton" value="Login" onclick=validate()></button>
+        </div>
     </body>
 </html>
         
