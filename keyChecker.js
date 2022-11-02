@@ -1,5 +1,5 @@
 var widthValue = 0;
-var keys ={"abcdef" : false, "ghijkl" : false, "mnopq" : false};
+var keys ={"AY2LB9" : false, "P2LCN7" : false, "HJ5Z23" : false};
 
 function keyChecker() {
     var key = document.getElementById("keyUser").value;
