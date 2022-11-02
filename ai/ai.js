@@ -23,7 +23,7 @@ function aiDisplayBubble(string) {
 
 var index = 0;
 bot.addEventListener("click", function() {
-    if (index == strings.length) index -= 1;
-    else index += 1;
+    if (index < strings.length - 1) index += 1;
+    else index = strings.length - 1;
     aiDisplayBubble(strings[index]);
 });
