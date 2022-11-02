@@ -1,1 +1,71 @@
-<h1>Database</h1>
+<!DOCTYPE html>
+<style>
+    #table-scroll {
+        height:150px;
+        overflow:auto;  
+        margin-top:20px;
+    }
+</style>
+
+<html>
+    <!-- Navigation bar -->
+    <nav>
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="summary.html">Summary</a>
+            <a href="system.html">System status</a>
+            <a href="database.html">Database</a>
+            <a href="logout.html">Logout</a>
+        </div> 
+    </nav>
+    <body>
+        <h1>Database</h1>
+
+        <h2>Nuclear Weapons</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Stock</th>
+            </tr>
+            <tr>
+                <td>Small atomic bomb</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Medium atomic bomb</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Large atomic bomb</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Small hydrogen bomb</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Medium hydrogen bomb</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Large hydrogen bomb</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+        <h2>Locations</h2>
+        <div class="table-scroll">
+            <table id="locationsTable">
+                <tr><th>Country</th>
+                    <th>Code</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" src="js/country-codes-lat-long-alpha3.js"></script>
+<script type="text/javascript" src="js/puzzle3.js"></script>
+<script type="text/javascript" src="js/database.js"></script>
