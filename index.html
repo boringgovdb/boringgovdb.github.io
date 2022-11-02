@@ -1,11 +1,16 @@
 <!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
 <html>
+    <link rel="stylesheet" href="index.css">
     <body>
         <form action="dashboard.html">
-            <div><h1>Login</h1></div>            
-            <label for="fname">Password:</label><br>
-            <input type="text" id="password" name="password" value=""><br><br/>
-            <input type="submit" value="Enter">
+            <div class='neonBox'>
+                <h1 class="neonText">Login</h1>
+                <input class="username" placeholder="Username:" type="text" id="username" name="username" value=""> <br><br/>            
+                <input class="password" placeholder="Password:" type="text" id="password" name="password" value=""><br><br/>
+                
+                <input class="enterButton" type="submit" value="Login">
+        </div>
         </form>
     </body>
 </html>
