@@ -3,7 +3,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Atom Bomb', 'Hydrogen Bomb', 'Smoke Bomb', 'Barrell Bomb', 'Suitcase Bomb', 'Cluster Bomb'],
         datasets: [{
             label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
