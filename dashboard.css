@@ -25,9 +25,26 @@
   
   .main {
     margin-left: 160px; 
+    font-size: 20px; 
     padding: 0px 10px;
   }
-  
+  h4{
+    color: #7542d1;
+  }
+
+  /* code for summary */
+.chart1, .chart2{
+ width: 500px; 
+ float: left;
+}
+.chart2{
+    float:right;
+    margin-right: 20px;
+}
+
+.allCharts{
+    width: 1000px;
+}
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
