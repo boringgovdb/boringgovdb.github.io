@@ -1,3 +1,3 @@
 function puzzle3() {
-    alert("Start puzzle 3...");
+  window.location = "puzzles/runner.html";
 }
