@@ -1,5 +1,5 @@
 body {
-  background: white;
+  background-image: url(backgroundImage.png);
   text-align: center;
   }
 
@@ -33,8 +33,7 @@ body {
 }
 
 ::placeholder { 
-  color: grey;
-  opacity: 0.5; 
+  color: #7542d1;
 }
 
 .enterButton{
