@@ -1,23 +1,5 @@
 <!DOCTYPE html>
-<style>
-    /* AI bot */
-    .float{
-        position:fixed;
-        width:60px;
-        height:60px;
-        bottom:40px;
-        right:40px;
-        background-color:#0C9;
-        color:#FFF;
-        border-radius:50px;
-        text-align:center;
-        box-shadow: 2px 2px 3px #999;
-    }
-
-    .ai-float{
-        margin-top:22px;
-    }
-</style>
+<script src="keyChecker.js"></script>
 <html>
     <link rel="stylesheet" href="dashboard.css">
         <div class="sidenav">
@@ -28,18 +10,30 @@
             <a href="logout.html">Logout</a>
         </div> 
     <body class="main">
-        <h2>Welcome, Mr President</h2>
-        <h3>Tasks:</h3>
+        <div >
+            <h1>Welcome, Mr President<div class="glitchPresident" data-text="Welcome, Mr President"></div></h1>
+        </div>
+        <h2 >Tasks:</h2>
         <ul>
-            <h4> • Activate emergency mode</h4>
-            <p> bvruwbnjwemvhfbjkevfbgfnekd v vfjnjrvio fenj f jo ifw ji fw i fwj i f f wi d fwj dw wdn  csnv kj cz sblj bdknlfeq m,nvjdm ckjlm m jvhsuvoyoeqfhw    o</p>
-        </ul>
+            <h4>• Find the bug in the summary</br>
+            <h4>• There is an error in the logs</div></h4>
+            <h4>• Double check where the country are </div></h4>
+    </ul>
         <div id="ai">
             <a class="float" id="aiBot">
                 <img src="ai/ai_angry.png" style="width: 60px; height: 60px;" alt="Button Image">
                 <i class="my-float"></i>
             </a>
         </div>
+        <div class="container">
+
+            <input class="key" placeholder="Key:" type="text" id="key" name="summaryKey" value=""/>
+            <input type="button" class="submitButton" value="Submit Key" onclick =move()></button><br></br>
+
+                <div class="light-grey">
+                  <div id="myBar" class="progressBar">20%</div>
+                </div>
+                  
     </body>
 </html>
 
