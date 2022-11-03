@@ -44,9 +44,12 @@
 <script type="text/javascript" src="ai/ai.js"></script>
 <script src="keyChecker.js"></script>
 <script>
-    console.log(document.cookie, getCount());
     if (getCount() == 0) {
         playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
         updateStates();
+    }
+    
+    if (getKeys().length == 3) {
+        playAudios(["sound/After getting all three keys.mp3", "sound/after typing all 3 codes.mp3"]);
     }
 </script>

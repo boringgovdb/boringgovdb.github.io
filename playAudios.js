@@ -16,3 +16,33 @@ function playAudios(sequences) {
     }
     })
 }
+
+function playFinalAudio(sequences) {
+    // play audio
+    let index = 0
+    const audioElement = playAudio(sequences[index])
+    audioElement.addEventListener('ended', (e) => {
+    index++
+    if (index < sequences.length) {
+        audioElement.src = sequences[index]
+        audioElement.play();
+    } else {
+        window.location="endVideo.html";
+    }
+    })
+}
+
+function playKeysAudio(sequences) {
+    // play audio
+    let index = 0
+    const audioElement = playAudio(sequences[index])
+    audioElement.addEventListener('ended', (e) => {
+    index++
+    if (index < sequences.length) {
+        audioElement.src = sequences[index]
+        audioElement.play();
+    } else {
+        window.location = "finalGame.html"; 
+    }
+    })
+}

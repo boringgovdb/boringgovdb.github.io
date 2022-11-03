@@ -13,7 +13,10 @@ function keyChecker() {
         console.log(getKeys());
         widthValue = widthAnim + widthIncrement;
         if (getKeys().length == correctKeys.length){
-            window.location = "finalGame.html"; 
+            playKeysAudio(["sound/After getting all three keys.mp3"]);
+        }
+        else if (getKeys().length == 1) {
+            playAudio(["sound/after typing all 3 codes.mp3"]);
         }
     }
     
