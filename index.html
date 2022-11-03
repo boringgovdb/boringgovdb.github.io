@@ -2,24 +2,32 @@
 <script src="index.js"></script>
 
 <html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="playAudios.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+        $( function() {
+            $( "#draggable" ).draggable();
+        } );
+        </script>
+    </head>
     <link rel="stylesheet" href="index.css">
-    
     <body class="main">
 
-
-        <!-- The video -->
-        <video autoplay id="myVideo">
-            <source src="video.mp4" type="video/mp4">
-        </video>
-
-
-
+        <div id="draggable" class="ui-widget-content">
             <div class='box'>
                 <h1 class="loginText">Login</h1>
                 <input class="username" placeholder="Username:" type="text" id="username" name="username" value=""/> <br><br/>            
                 <input class="password" placeholder="Password:" type="text" id="password" name="password" value=""/><br><br/>
                 <input type="button" class="enterButton" value="Login" onclick=validate()></button>
         </div>
+        </div>
     </body>
 </html>
-        
+    
+<script type="text/javascript" src="js/cookies.js"></script>
+<script>
+    initCookie();
+    playAudios(["sound/Introduction.mp3"]);
+</script>

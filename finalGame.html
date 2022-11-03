@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<script src="end.js"></script>
+<html>
+    <head>
+        <script src="playAudios.js"></script>
+    </head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="modal.css">      
+    <body class="main">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="puzzles/final.html" height="200" width="400"></iframe>
+            </div>
+        </div>
+        <div class='box'>
+            <h1 class="loginText">Submit Nuke Code</h1>
+            <input class="password" placeholder="Nuke Code:" type="text" id="nukeCode" name="nukeCode" value=""/><br><br/>
+            <input type="button" class="enterButton" value="SUBMIT" onclick=endVideo()></button>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" src="js/puzzle.js"></script>
+<script>
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+</script>

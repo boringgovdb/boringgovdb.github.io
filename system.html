@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src="playAudios.js"></script>
+    </head>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="modal.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -10,7 +14,15 @@
         </div> 
     <body class="main">
         <h1>System status</h1>
-        <!-- Add some css here to make it red and orange-->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="puzzles/maze.html" height="200" width="400"></iframe>
+            </div>
+        </div>
+
         <div><strong class="alert">DANGER!</strong> AI has started trying to access database.</div>
         <div><strong class="warning">WARNING!</strong> AI has gone ROGUE!</div>
 
@@ -22,8 +34,18 @@
               <th>Status</th>
             </tr>
         </table>
+        <div id="ai">
+            <a class="float" id="aiBot">
+                <img src="ai/ai_angry.png" style="width: 60px; height: 60px;" alt="Button Image">
+                <i class="my-float"></i>
+            </a>
+        </div>
     </body>
 </html>
 
-<script type="text/javascript" src="js/puzzle2.js"></script>
+<script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="js/puzzle.js"></script>
 <script type="text/javascript" src="js/system.js"></script>
+<script>
+    playAudios(["sound/on system status page.mp3"]);
+</script>

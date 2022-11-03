@@ -2,7 +2,7 @@ var attempt = 3;
 function validate(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    if ( username == "123" && password == "abc"){
+    if ( username == "MrPr35ident" && password == "1wantNuk3s"){
         window.location = "dashboard.html"; 
         return false;
     }
@@ -16,5 +16,4 @@ function validate(){
             alert("You have "+attempt+" attempts left");
         }  
     }
-    }
-
+}

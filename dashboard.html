@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<script src="keyChecker.js"></script>
 <html>
+    <head>
+        <script src="playAudios.js"></script>
+    </head>
     <link rel="stylesheet" href="dashboard.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
@@ -9,33 +11,45 @@
             <a href="database.html">Database</a>
             <a href="logout.html">Logout</a>
         </div> 
-    <body class="main">
+    <body class="mainDashboard">
+
         <div class="progressContainer">
         <div>
             <h1>Welcome, Mr President<div class="glitchPresident" data-text="Welcome, Mr President"></div></h1>
-        </div><br></br>
+        </div><br>
         <h2>Tasks:</h2>
         <ul>
-            <h4>• Find the bug in the summary</br>
-            <h4>• There is an error in the logs</h4>
-            <h4>• Double check where the country are</h4>
+            <h4>• Lotj znk ham ot znk yassgxe</br>
+            <h4>• Znkxk oy gt kxxux ot znk rumy</h4>
+            <h4>• Juahrk inkiq cnkxk znk iuatzxoky rgzozajk</h4>
     </ul>
         <div id="ai">
             <a class="float" id="aiBot">
                 <img src="ai/ai_angry.png" style="width: 60px; height: 60px;" alt="Button Image">
                 <i class="my-float"></i>
             </a>
-        </div><br></br>
-        
-
+        </div><br></br>        
+        <div class="keyProgress">
             <input class="key" placeholder="Key:" type="text" id="keyUser" name="summaryKey" value=""/>
             <input type="button" class="submitButton" value="Submit Key" onclick =keyChecker()></button><br></br>
-
                 <div class="light-grey">
                   <div id="myBar" class="progressBar">0%</div>
                 </div>
+            </div>
                   
     </body>
 </html>
 
+<script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript" src="ai/ai.js"></script>
+<script src="keyChecker.js"></script>
+<script>
+    if (getCount() == 0) {
+        playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
+        updateStates();
+    }
+    
+    if (getKeys().length == 3) {
+        playAudios(["sound/After getting all three keys.mp3", "sound/after typing all 3 codes.mp3"]);
+    }
+</script>
