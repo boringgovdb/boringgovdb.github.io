@@ -20,6 +20,7 @@ function initCookie() {
 
     var keys = []; 
     document.cookie = "keys=" + JSON.stringify(keys) + "; path=/";
+    document.cookie = "count=0; path=/";
 }
 
 function getCookie(cname) {
@@ -33,20 +34,23 @@ function getCookie(cname) {
 }
 
 // For the other files to use
-function updateStates(stateName) {
-    var states = JSON.parse(getCookie("states"));
+function updateStates() {
+    var count = JSON.parse(getCookie("count"));
     var keys = JSON.parse(getCookie("keys"));
 
-    states[stateName] += 1;
+    count += 1;
     document.cookie = "keys=" + JSON.stringify(keys) + "; path=/";
+    document.cookie = "count=" + count + "; path=/";
 }
 
 function addKey(key) {
-    var states = JSON.parse(getCookie("states"));
+    var count = JSON.parse(getCookie("count"));
     var keys = JSON.parse(getCookie("keys"));
 
     keys.push(key);
     document.cookie = "keys=" + JSON.stringify(keys) + "; path=/";
+    document.cookie = "count=" + count + "; path=/";
 }
 
 function getKeys() { return JSON.parse(getCookie("keys")); }
+function getCount() { return JSON.parse(getCookie("count")); }

@@ -1,5 +1,6 @@
 function puzzle() {
   modal.style.display = "block";
+  updateStates();
 }
 
 // Get the modal
