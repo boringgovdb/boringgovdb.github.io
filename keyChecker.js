@@ -12,7 +12,7 @@ function keyChecker() {
         widthValue = widthAnim + widthIncrement;
     }
     else{                
-        window.alert("here4");
+        window.alert("Incorrect Key");
     }        
 
     function frame() {
