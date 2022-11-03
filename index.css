@@ -1,8 +1,10 @@
 body {
   background-image: url(backgroundImage.png);
   text-align: center;
+  overflow:hidden;
   }
 /*video*/
+#draggable { padding: 0.5em; }
 
 .box{
   width: 500px;
