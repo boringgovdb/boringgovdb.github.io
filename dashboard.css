@@ -384,3 +384,13 @@ body{
   border-radius: 15px;
   border: solid #7542d1 5px;
 }
+
+.videoBackground{
+  background-color:black;
+}
+#myVideo {
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+  max-width: 90%;
+}
