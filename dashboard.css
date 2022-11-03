@@ -394,3 +394,5 @@ body{
   bottom: 0;
   max-width: 90%;
 }
+
+audio { display:none;}

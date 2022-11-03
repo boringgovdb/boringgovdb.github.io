@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src="playAudios.js"></script>
+    </head>
     <link rel="stylesheet" href="dashboard.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
@@ -9,6 +12,7 @@
             <a href="logout.html">Logout</a>
         </div> 
     <body class="mainDashboard">
+
         <div class="progressContainer">
         <div>
             <h1>Welcome, Mr President<div class="glitchPresident" data-text="Welcome, Mr President"></div></h1>
@@ -39,3 +43,6 @@
 <script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript" src="ai/ai.js"></script>
 <script src="keyChecker.js"></script>
+<script>
+    playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
+</script>
