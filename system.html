@@ -2,6 +2,7 @@
 <html>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="modal.css">
+    <script src="playAudios.js"></script>
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -10,6 +11,12 @@
             <a href="logout.html">Logout</a>
         </div> 
     <body class="main">
+        
+        <audio controls autoplay id="audio" style="display:none;">
+            <source src="sound/on system status page.mp3" type="audio/mpeg">
+          </audio>
+
+
         <h1>System status</h1>
         <!-- The Modal -->
         <div id="myModal" class="modal">
