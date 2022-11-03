@@ -1,6 +1,6 @@
 function endVideo(){
     var nukeCode = document.getElementById("nukeCode").value;
-    if( nukeCode == "abc"){
+    if( nukeCode == "T4AKPY32H"){
         playFinalAudio(["sound/If you type in the final nuclear code.mp3", "sound/if you type in final nuclear code.mp3"]);
     }
     else{ 
