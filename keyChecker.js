@@ -1,5 +1,5 @@
 var widthValue = 0;
-var keys ={"AY2LB9" : false, "P2LCN7" : false, "HJ5Z23" : false};
+var correctKeys = ["AY2LB9", "P2LCN7", "HJ5Z23"];
 
 function keyChecker() {
     var key = document.getElementById("keyUser").value;
@@ -7,10 +7,12 @@ function keyChecker() {
     var widthAnim = widthValue;
     var id = setInterval(frame, 10);
     var widthIncrement = 33;
-    if (key in keys && keys[key] == false) {
-        keys[key] = true;
+
+    if (correctKeys.indexOf(key) != -1 && getKeys().indexOf(key) == -1) {
+        addKey(key);
+        console.log(getKeys());
         widthValue = widthAnim + widthIncrement;
-        if (keys["AY2LB9"]== true && keys["P2LCN7"]== true && keys["HJ5Z23"]== true ){
+        if (getKeys().length == correctKeys.length){
             window.location = "finalGame.html"; 
         }
     }
@@ -28,4 +30,38 @@ function keyChecker() {
         elem.innerHTML = widthAnim * 1 + '%';
         }
     }
+}
+
+function initLoadingBar(width) {
+    var elem = document.getElementById("myBar");
+    var widthAnim = width;
+    var id = setInterval(frame, 10);
+    var widthIncrement =  33;
+
+    console.log(getKeys());
+    width = widthAnim + widthIncrement;
+    if (getKeys().length >= correctKeys.length){
+        window.location = "finalGame.html"; 
+    }    
+
+    function frame() {
+        // for debugging purposes
+        if (width > 100) {
+            width = 100;
+        }
+
+        if (widthAnim >= width) {
+        clearInterval(id);
+        }
+        else {
+            widthAnim++;
+            elem.style.width = widthAnim + '%';
+            elem.innerHTML = widthAnim * 1 + '%';
+        }
+    }
+}
+
+for (var i = 0; i < getKeys().length; i++) {
+    widthValue = i*33;
+    initLoadingBar(widthValue);
 }
