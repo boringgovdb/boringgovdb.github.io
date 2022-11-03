@@ -17,10 +17,10 @@
             <a href="logout.html">Logout</a>
         </div> 
     <body class="main">
-        <h1>Database</h1>
-
-        <h2>Nuclear Weapons</h2>
-        <table>
+        <h1 class="database">Database</h1>
+<div class="weapons">
+        <h3>Nuclear Weapons</h3>
+        <table id="weaponsTable">
             <tr>
                 <th>Name</th>
                 <th>Stock</th>
@@ -38,32 +38,110 @@
                 <td>2</td>
             </tr>
             <tr>
+                <td>Small barrell bomb</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Medium barrell bomb</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Large barrell bomb</td>
+                <td>2</td>
+            </tr>
+            <tr>
                 <td>Small hydrogen bomb</td>
-                <td>5</td>
+                <td>12</td>
             </tr>
             <tr>
                 <td>Medium hydrogen bomb</td>
-                <td>2</td>
+                <td>5</td>
             </tr>
             <tr>
                 <td>Large hydrogen bomb</td>
                 <td>1</td>
             </tr>
+            <tr>
+                <td>Cluster bomb</td>
+                <td>1</td>
+            </tr>
         </table>
-
-        <h2>Locations</h2>
+    </div>
+    <div class="locations">
+        <h3>Locations</h3>
         <div class="table-scroll">
-            <table id="locationsTable">
-                <tr><th>Country</th>
+            <table id="locationTable">
+                <tr><th class="contry">Country</th>
                     <th>Code</th>
                     <th>Latitude</th>
                     <th>Longitude</th>
                 </tr>
+                <tr>
+                    <td>Algeria</td>
+                    <td>DZA</td>
+                    <td>12.28</td>
+                    <td>12.3</td>
+                </tr>
+                <tr>
+                    <td>Canada</td>
+                    <td>CAN</td>
+                    <td>50.24</td>
+                    <td>50.90</td>
+                </tr>
+                <tr>
+                    <td>Chad</td>
+                    <td>CHA</td>
+                    <td>148.15</td>
+                    <td>148.19</td>
+                </tr>
+                <tr>
+                    <td>Ethiopia</td>
+                    <td>ETH</td>
+                    <td>231.8</td>
+                    <td>231.38</td>
+                </tr>
+                <tr>
+                    <td>Guadeloupe</td>
+                    <td>GLP</td>
+                    <td>266.1</td>
+                    <td>266.11.75</td>
+                </tr>
+                
+                <tr>
+                    <td>Japan</td>
+                    <td>JAP</td>
+                    <td>738.16</td>
+                    <td>738.311</td>
+                </tr>
+                <tr>
+                    <td>Iceland</td>
+                    <td>ICL</td>
+                    <td><button class= 'puzzleThreeButton' onClick='puzzle3()'>-123.45</button></td>
+                    <td>224.086</td>
+                </tr>
+                <tr>
+                    <td>Mexico</td>
+                    <td>MEX</td>
+                    <td>484.23</td>
+                    <td>484.567.8</td>
+                </tr>
+                <tr>
+                    <td>Romania</td>
+                    <td>ROU</td>
+                    <td>624.852</td>
+                    <td>624.961</td>
+                </tr>
+                <tr>
+                    <td>United Kingdom</td>
+                    <td>UK</td>
+                    <td>313.93.28</td>
+                    <td>333.2</td>
+                </tr>
+
             </table>
         </div>
+    </div>
     </body>
 </html>
 
-<script type="text/javascript" src="js/country-codes-lat-long-alpha3.js"></script>
 <script type="text/javascript" src="js/puzzle3.js"></script>
-<script type="text/javascript" src="js/database.js"></script>

@@ -1,3 +1,3 @@
 function puzzle2() {
-    alert("Start puzzle 2...");
+    window.location = "puzzles/maze.html";
 }
