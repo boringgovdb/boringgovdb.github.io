@@ -1,18 +1,8 @@
 body {
-  background:transparent;
+  background-image: url(backgroundImage.png);
   text-align: center;
   }
 /*video*/
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
-
 
 .box{
   width: 500px;
@@ -23,6 +13,7 @@ body {
   border: 0.2rem solid #fff;
   background-color: rgb(39, 39, 39);  
   border-radius: 1rem;
+  text-align: center;
 }
 
 .loginText {  
@@ -55,8 +46,18 @@ body {
   width: 215px;
   height: 40px;
   color: black;
+  cursor: pointer;
 }
 
 .fail{
   color: red;
+}
+
+.finishedText{
+  color:white;
+  width: 400px;
+  text-align: center;
+  margin-left: 75px;  
+  margin-right: 75px;
+  font-size: 20px;
 }
