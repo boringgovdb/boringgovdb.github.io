@@ -5,7 +5,7 @@ body {
   }
 /*video*/
 #draggable { padding: 0.5em; }
-
+audio { display:none;}
 
 .box{
   width: 500px;
