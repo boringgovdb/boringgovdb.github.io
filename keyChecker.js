@@ -11,7 +11,7 @@ function keyChecker() {
         keys[key] = true;
         widthValue = widthAnim + widthIncrement;
         if (keys["AY2LB9"]== true && keys["P2LCN7"]== true && keys["HJ5Z23"]== true ){
-            window.location = "finalScreen.html"; 
+            window.location = "finalGame.html"; 
         }
     }
     
