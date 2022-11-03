@@ -1,6 +1,6 @@
 function endVideo(){
     var nukeCode = document.getElementById("nukeCode").value;
-    if( nukeCode == "abc"){
+    if( nukeCode == "T4AKPY32H"){
         window.location="endVideo.html";
     }
     else{ 
