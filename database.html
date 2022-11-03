@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<style>
-    #table-scroll {
-        height:150px;
-        overflow:auto;  
-        margin-top:20px;
-    }
-</style>
 
 <html>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="modal.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -18,6 +12,16 @@
         </div> 
     <body class="main">
         <h1 class="database">Database</h1>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="puzzles/runner.html" height="200" width="400"></iframe>
+            </div>
+        </div>
+
 <div class="weapons">
         <h3>Nuclear Weapons</h3>
         <table id="weaponsTable">
@@ -116,7 +120,7 @@
                 <tr>
                     <td>Iceland</td>
                     <td>ICL</td>
-                    <td><button class= 'puzzleThreeButton' onClick='puzzle3()'>-123.45</button></td>
+                    <td><button class= 'puzzleThreeButton' onClick='puzzle()'>-123.45</button></td>
                     <td>224.086</td>
                 </tr>
                 <tr>
@@ -144,4 +148,4 @@
     </body>
 </html>
 
-<script type="text/javascript" src="js/puzzle3.js"></script>
+<script type="text/javascript" src="js/puzzle.js"></script>
