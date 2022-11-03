@@ -32,25 +32,25 @@ function keyChecker() {
     }
 }
 
-function initLoadingBar(width) {
+function initLoadingBar() {
     var elem = document.getElementById("myBar");
-    var widthAnim = width;
+    var widthAnim = widthValue;
     var id = setInterval(frame, 10);
     var widthIncrement =  33;
 
     console.log(getKeys());
-    width = widthAnim + widthIncrement;
+    widthValue = widthAnim + widthIncrement;
     if (getKeys().length >= correctKeys.length){
         window.location = "finalGame.html"; 
     }    
 
     function frame() {
         // for debugging purposes
-        if (width > 100) {
-            width = 100;
+        if (widthValue > 100) {
+            widthValue = 100;
         }
 
-        if (widthAnim >= width) {
+        if (widthAnim >= widthValue) {
         clearInterval(id);
         }
         else {
@@ -63,5 +63,5 @@ function initLoadingBar(width) {
 
 for (var i = 0; i < getKeys().length; i++) {
     widthValue = i*33;
-    initLoadingBar(widthValue);
+    initLoadingBar();
 }
