@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <script src="index.js"></script>
+
+
+<style>
+    .fail {
+        color: red;
+        font-size: 152px;
+        text-align: center;
+    }
+</style>
+
 <html>
-    <link rel="stylesheet" href="index.css">
+    <head>
+        <script src="playAudios.js"></script>
+    </head>
     <body>
         <div>                
             <h1 class="fail"> FAIL </h1>
         </div>
     </body>
 </html>
+
+<script>
+    playAudios(["sound/after the world is nuked.mp3"]);
+</script>

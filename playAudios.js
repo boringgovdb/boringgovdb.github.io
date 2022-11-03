@@ -17,6 +17,10 @@ function playAudios(sequences) {
     })
 }
 
+function fail() {
+    window.location = "fail.html";
+}
+
 function playFinalAudio(sequences) {
     // play audio
     let index = 0
