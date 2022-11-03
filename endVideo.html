@@ -1,7 +1,12 @@
 <!DOCTYPE html> 
 <html> 
     <link rel="stylesheet" href="dashboard.css">
+    <script src="playAudios.js"></script>
     <body class="videoBackground"> 
+        <audio controls autoplay id="audio" style="display:none;">
+            <source src="sound/if you type in final nuclear code.mp3" type="audio/mpeg">
+          </audio>
+        
         <video autoplay muted loop id="myVideo">
         <source src="endVideo.mp4" type="video/mp4">
         </video>
@@ -10,6 +15,11 @@
                 <img src="ai/ai_angry.png" style="width: 60px; height: 60px;" alt="Button Image">
                 <i class="my-float"></i>
             </a>
+            <script>
+                setTimeout(function(){
+                   window.location.href = 'fail.html';
+                }, 16250);
+             </script>
         </div>
 
     </body> 

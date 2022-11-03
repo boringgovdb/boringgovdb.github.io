@@ -17,8 +17,3 @@ function validate(){
         }  
     }
 }
-document.addEventListener('click', musicPlay);
-function musicPlay() {
-    document.getElementById('introAudio').play();
-    document.removeEventListener('click', musicPlay);
-}

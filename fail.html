@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <script src="index.js"></script>
 <html>
-    <link rel="stylesheet" href="index.css">
+    <style>
+        .fail{
+            color:red;
+            font-size: 152px;
+            text-align: center;
+        }
+    </style>>
+    <script src="playAudios.js"></script>
     <body>
         <div>                
             <h1 class="fail"> FAIL </h1>
+            <audio controls autoplay id="audio" style="display:none;">
+                <source src="sound/after the world is nuked.mp3" type="audio/mpeg">
+              </audio>
         </div>
     </body>
 </html>
