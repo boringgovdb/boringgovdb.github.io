@@ -59,7 +59,7 @@ const myChart2 = new Chart(
                 // if the "Bug" value is clicked on
                 if (dataX == 7) {
                     // PLAY PUZZLE 1
-                    puzzle1();
+                    puzzle();
                 }
             }
         }

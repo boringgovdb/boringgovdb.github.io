@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="modal.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -10,18 +11,28 @@
         </div> 
     <body class="main">
         <h1>Summary</h1>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="puzzles/slider.html" height="200" width="400"></iframe>
+            </div>
+        </div>
+
+        </div>
         <div class="charts">
-        <div class="chart1">
-            <canvas id="myChart" width="400" height="350"></canvas>
+            <div class="chart1">
+                <canvas id="myChart" width="400" height="350"></canvas>
+            </div>
+            <div class="chart2">
+                <canvas id="myChart2" width="400" height="350"></canvas>
+            </div>
         </div>
-        <div class="chart2">
-            <canvas id="myChart2" width="400" height="350"></canvas>
-        </div>
-    </div>
     </body>
 </html>
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script type="text/javascript" src="js/puzzle1.js"></script>
+<script type="text/javascript" src="js/puzzle.js"></script>
 <script type="text/javascript" src="js/summary.js"></script>

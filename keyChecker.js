@@ -6,13 +6,17 @@ function keyChecker() {
     var elem = document.getElementById("myBar");
     var widthAnim = widthValue;
     var id = setInterval(frame, 10);
-    var widthIncrement = 33.3;
+    var widthIncrement = 33;
     if (key in keys && keys[key] == false) {
         keys[key] = true;
         widthValue = widthAnim + widthIncrement;
+        if (keys["AY2LB9"]== true && keys["P2LCN7"]== true && keys["HJ5Z23"]== true ){
+            window.location = "finalScreen.html"; 
+        }
     }
+    
     else{                
-        window.alert("here4");
+        window.alert("Incorrect Key");
     }        
 
     function frame() {
