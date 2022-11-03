@@ -44,5 +44,9 @@
 <script type="text/javascript" src="ai/ai.js"></script>
 <script src="keyChecker.js"></script>
 <script>
-    playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
+    console.log(document.cookie, getCount());
+    if (getCount() == 0) {
+        playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
+        updateStates();
+    }
 </script>
