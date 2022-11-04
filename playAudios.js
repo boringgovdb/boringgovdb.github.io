@@ -49,6 +49,15 @@ function playFinalAudio(sequences) {
     if (index < sequences.length) {
         audioElement.src = sequences[index]
         audioElement.play();
+        if (sequences[index].slice(6,8) == "ai") {
+            var face = "";
+            var src = sequences[index];
+            if (src == "sound/ai_after the world is nuked.mp3") { face = "sad";}
+            else if (src == "sound/ai_if you type in final nuclear code.mp3") { face = "evil";}
+            else if (src == "sound/ai_after typing all 3 codes.mp3") { face = "angry"; }
+            else { face = "happy"; }
+            aiDisplayBubble("*talking*", face);
+        }
     } else {
         window.location="endVideo.html";
     }
