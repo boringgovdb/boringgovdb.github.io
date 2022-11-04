@@ -40,7 +40,7 @@ const myChart2 = new Chart(
     document.getElementById('myChart2'), {
     type: 'line',
     data: {
-        labels: ['Jan','Feb','Mar','Apr','May','Jun', 'Jul', 'Bug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        labels: ['Jan','Feb','Mar','Apr','May','Jun', 'Jul', 'BUG', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [{
             label: 'Timeline',
             backgroundColor: 'rgb(255, 99, 132)',

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+<style>
+    .backwards {
+      display: inline-block;
+      -moz-transform: scale(-1, -1);
+      -webkit-transform: scale(-1, -1);
+      -o-transform: scale(-1, -1);
+      -ms-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+    }
+</style>
+
 <html>
-    <head>
-        <script src="playAudios.js"></script>
-    </head>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="css/dashboard.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -12,44 +20,47 @@
             <a href="logout.html">Logout</a>
         </div> 
     <body class="mainDashboard">
-
-        <div class="progressContainer">
-        <div>
-            <h1>Welcome, Mr President<div class="glitchPresident" data-text="Welcome, Mr President"></div></h1>
-        </div><br>
-        <h2>Tasks:</h2>
-        <ul>
-            <h4>• Lotj znk ham ot znk yassgxe</br>
-            <h4>• Znkxk oy gt kxxux ot znk rumy</h4>
-            <h4>• Juahrk inkiq cnkxk znk iuatzxoky rgzozajk</h4>
-    </ul>
         <div id="ai">
-            <a class="float" id="aiBot">
-                <img src="ai/ai_angry.png" style="width: 60px; height: 60px;" alt="Button Image">
+            <a class="ai float" id="aiBot">
+                <img src="ai/ai_happy.png" style="width: 100px; height: 100px;" alt="Button Image">
                 <i class="my-float"></i>
             </a>
-        </div><br></br>        
-        <div class="keyProgress">
-            <input class="key" placeholder="Key:" type="text" id="keyUser" name="summaryKey" value=""/>
-            <input type="button" class="submitButton" value="Submit Key" onclick =keyChecker()></button><br></br>
-                <div class="light-grey">
-                  <div id="myBar" class="progressBar">0%</div>
-                </div>
+        </div>
+
+        <div class="progressContainer">
+            <div>
+                <h1>Welcome, Mr President<div class="glitchPresident" data-text="Welcome, Mr President"></div></h1>
             </div>
+            <h2>Tasks:</h2>
+            <ul>
+                <li class="backwards">Once you have received this code you must NOT enter the nuclear code. <b>LOG OUT!!!!</b></li>
+                <li class="backwards">You will need to break the security system that protects this final code.</li>
+                <li class="backwards">COnce you have received the codes, enter them back here on the Dashboard, to enter the Nuclear Code section.</li>
+                <li class="backwards">However, each key code is protected by different types of security measures, so you will need to complete them to get the codes.</li>
+                <li class="backwards">Inside the glitches, you will enter the inner code, which will give you access to the 3 codes to enter the Nuclear Code section.</li>
+                <li class="backwards">Look around on the website for some bugs where the AI has glitched out.</li>
+            </ul>
+            <br/>   
+            <div class="keyProgress">
+                <input class="key" placeholder="Key:" type="text" id="keyUser" name="summaryKey" value=""/>
+                <input type="button" class="submitButton" value="Submit Key" onclick =keyChecker()></button><br></br>
+                    <div class="light-grey">
+                    <div id="myBar" class="progressBar">0%</div>
+                    </div>
+            </div>
+        </div>
                   
     </body>
 </html>
 
 <script type="text/javascript" src="js/cookies.js"></script>
 <script type="text/javascript" src="ai/ai.js"></script>
+<script type="text/javascript" src="playAudios.js"></script>
 <script src="keyChecker.js"></script>
 <script>
     if (getCount() == 0) {
-        playAudios(["sound/After logging in.mp3", "sound/after logging on (after agent talks).mp3"]);
+        playAudios(["sound/agent_After logging in.mp3", "sound/ai_after logging on.mp3"]);
         updateStates();
     }
-    
-    if (getKeys().length == 3) {
-        playAudios(["sound/After getting all three keys.mp3", "sound/after typing all 3 codes.mp3"]);
-    }
+    // more audio in keyChecker
 </script>
