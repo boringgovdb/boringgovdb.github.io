@@ -1,10 +1,13 @@
 body {
-  background-image: url(backgroundImage.png);
+  background-image: url(../backgroundImage.png);
   text-align: center;
   overflow:hidden;
   }
 /*video*/
-#draggable { padding: 0.5em; }
+#draggable {
+  padding: 0.5em;
+}
+
 audio { display:none;}
 
 .box{
@@ -17,13 +20,13 @@ audio { display:none;}
   background-color: rgb(39, 39, 39);  
   border-radius: 1rem;
   text-align: center;
+  cursor: move;
 }
 
 .loginText {  
   color: #fff;
   font-size: 65px;
 }
-
 
 .password, .username{  
   color:#000000;
@@ -49,7 +52,6 @@ audio { display:none;}
   width: 215px;
   height: 40px;
   color: black;
-  cursor: pointer;
 }
 
 .fail{

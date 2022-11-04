@@ -10,13 +10,12 @@ function keyChecker() {
 
     if (correctKeys.indexOf(key) != -1 && getKeys().indexOf(key) == -1) {
         addKey(key);
-        console.log(getKeys());
         widthValue = widthAnim + widthIncrement;
         if (getKeys().length == correctKeys.length){
-            playKeysAudio(["sound/After getting all three keys.mp3"]);
+            playKeysAudio(["sound/agent_After getting all three keys.mp3"]);
         }
         else if (getKeys().length == 1) {
-            playAudio(["sound/after typing all 3 codes.mp3"]);
+            playAudios(["sound/ai_after typing all 3 codes.mp3"]);
         }
     }
     

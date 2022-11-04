@@ -2,7 +2,7 @@ body{
   overflow: hidden; 
 }
 .mainDashboard{  
-  background-image: url(backgroundImageNoText.png);
+  background-image: url(../backgroundImageNoText.png);
 }
 .keyProgress{
   margin-left: 20%;
@@ -338,31 +338,7 @@ body{
 .database{
   margin-bottom: 5px;
 }
-/* AI bot */
-.float{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-}
 
-.ai-float{
-  margin-top:22px;
-}
-.aiBubble {
-  width: 120px; 
-  height: 80px; 
-  background: #5ac4ed;
-  position: absolute;
-  bottom: 20px;
-  right: 120px;
-  border-radius: 10px;
-  text-align: center;
-}
 /*Loading bar*/
 .key{
   margin-left: 5%;
@@ -395,4 +371,48 @@ body{
   max-width: 90%;
 }
 
+/* Audio */
 audio { display:none;}
+
+/* AI bot */
+.ai {
+  position:fixed;
+  width:100px;
+  height:100px;
+  bottom:40px;
+  right:40px;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+}
+
+.float{
+  animation: floating 3s infinite ease-in-out;
+}
+
+.aiBubble {
+  width: 120px; 
+  height: 80px; 
+  background: #5ac4ed;
+  position: absolute;
+  bottom: 40px;
+  right: 160px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/* Flipping the text upside down */
+.flipped {
+  display: inline;
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+}
