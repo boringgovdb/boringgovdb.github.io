@@ -6,6 +6,7 @@
     </head>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/database.css">
         <div class="sidenav">
             <a href="dashboard.html">Dashboard</a>
             <a href="summary.html">Summary</a>
@@ -123,7 +124,13 @@
                 <tr>
                     <td>Iceland</td>
                     <td>ICL</td>
-                    <td><button class= 'puzzleThreeButton' onClick='puzzle()'>-123.45</button></td>
+                    <td>
+                        <div class="glitch">
+                            <span aria-hidden="true">-123.45</span>
+                            <a id="puzzle3Btn">-123.45</a>
+                            <span aria-hidden="true">-123.45</span>
+                        </div>
+                    </td>
                     <td>224.086</td>
                 </tr>
                 <tr>
@@ -158,7 +165,13 @@
 </html>
 
 <script type="text/javascript" src="js/cookies.js"></script>
+<script type="text/javascript" src="ai/ai.js"></script>
 <script type="text/javascript" src="js/puzzle.js"></script>
 <script>
+    var btn = document.getElementById("puzzle3Btn");
+    btn.addEventListener("click", function() {
+        puzzle();
+    });
+
     playAudios(["sound/ai_on database page.mp3"]);
 </script>
