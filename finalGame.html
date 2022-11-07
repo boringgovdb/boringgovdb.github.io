@@ -4,8 +4,17 @@
     <head>
         <script src="playAudios.js"></script>
     </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/finalGame.css">
-    <link rel="stylesheet" href="css/modal.css">      
+    <link rel="stylesheet" href="css/modal.css">  
+    <div class="sidenav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="summary.html">Summary</a>
+        <a href="system.html">System status</a>
+        <a href="database.html">Database</a>
+        <a href="logout.html">Logout</a>
+    </div> 
+
     <body class="main">
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -15,22 +24,35 @@
                 <iframe src="puzzles/final.html" height="200" width="400"></iframe>
             </div>
         </div>
-        <div class='box'>
-            <h1 class="loginText">Submit Nuke Code</h1>
-            <input class="password" placeholder="Nuke Code:" type="text" id="nukeCode" name="nukeCode" value=""/><br><br/>
-            <input type="button" class="enterButton" value="SUBMIT" onclick=endVideo()></button>
+
+        <!-- Phone call -->
+        <div id="call-phone" class="call-phone">
+            <div class="call-phone__circle-fill_active"></div>
+            <div class="call-phone__circle-img_active">
+              <i class="fa fa-phone icon-phone_active"></i>   
+            </div>
         </div>
+        
+        <!-- AI -->
         <div id="ai">
             <a class="ai float" id="aiBot">
                 <img src="ai/ai_angry.png" style="width: 100px; height: 100px;" alt="Button Image">
                 <i class="my-float"></i>
             </a>
         </div>
+
+        <div class='box'>
+            <h1 class="loginText">Submit Nuke Code</h1>
+            <input class="password" placeholder="Nuke Code:" type="text" id="nukeCode" name="nukeCode" value=""/><br><br/>
+            <input type="button" class="enterButton" value="SUBMIT" onclick=endVideo()></button>
+        </div>
     </body>
 </html>
 
+<script type="text/javascript" src="ai/ai.js"></script>
 <script type="text/javascript" src="js/puzzle.js"></script>
 <script>
+    disableRingtone();
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
 </script>
