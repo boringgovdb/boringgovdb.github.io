@@ -36,6 +36,18 @@ function playAudios(sequences) {
     })
 }
 
+
+const ringtoneElement = playAudio("sound/nokia_ringtone.mp3");
+
+function enableRingtone() {
+    ringtoneElement.loop = true;
+}
+
+function disableRingtone() {
+    ringtoneElement.loop = false;
+    ringtoneElement.pause();
+}
+
 function fail() {
     window.location = "fail.html";
 }
@@ -59,6 +71,7 @@ function playFinalAudio(sequences) {
             aiDisplayBubble("*talking*", face);
         }
     } else {
+        aiHideBubble();
         window.location="endVideo.html";
     }
     })

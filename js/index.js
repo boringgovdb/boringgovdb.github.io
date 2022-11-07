@@ -17,3 +17,12 @@ function validate(){
         }  
     }
 }
+
+// Convert to green call and start audio when call clicked on
+function activeCall() {
+    var phone = document.getElementById("call-phone");
+    phone.innerHTML = "<div class='call-phone__circle-fill_active'></div>"+
+    "<div class='call-phone__circle-img_active'>"+
+    "<i class='fa fa-phone icon-phone_active'></i>"+ 
+    "</div>";
+}

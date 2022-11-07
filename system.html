@@ -3,6 +3,7 @@
     <head>
         <script src="playAudios.js"></script>
     </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/modal.css">
         <div class="sidenav">
@@ -34,6 +35,16 @@
               <th>Status</th>
             </tr>
         </table>
+
+        <!-- Phone call -->
+        <div id="call-phone" class="call-phone">
+            <div class="call-phone__circle-fill_active"></div>
+            <div class="call-phone__circle-img_active">
+              <i class="fa fa-phone icon-phone_active"></i>   
+            </div>
+        </div>
+
+        <!-- AI -->
         <div id="ai">
             <a class="ai float" id="aiBot">
                 <img src="ai/ai_happy.png" style="width: 100px; height: 100px;" alt="Button Image">
@@ -48,5 +59,6 @@
 <script type="text/javascript" src="js/puzzle.js"></script>
 <script type="text/javascript" src="js/system.js"></script>
 <script>
+    disableRingtone();
     playAudios(["sound/ai_on system status page.mp3"]);
 </script>

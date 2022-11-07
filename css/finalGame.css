@@ -2,11 +2,39 @@ body {
     background-image: url(../backgroundImageNoText.png);
     text-align: center;
     overflow:hidden;
-    }
-  /*video*/
-  #draggable {
-    padding: 0.5em;
+}
+  
+.sidenav {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: #818181 solid 1px;
+}
+
+.sidenav a {
+  padding: 30px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+  
+  .main {
+    margin-left: 160px; 
+    font-size: 20px; 
+    padding: 0px 10px;
   }
+    
   
   audio { display:none;}
   
@@ -20,7 +48,6 @@ body {
     background-color: rgb(39, 39, 39);  
     border-radius: 1rem;
     text-align: center;
-    cursor: move;
   }
   
   .loginText {  
@@ -98,4 +125,118 @@ body {
   from { transform: translate(0,  0px); }
   65%  { transform: translate(0, 15px); }
   to   { transform: translate(0, -0px); }    
+}
+
+/* Call ringing */
+/*call phone*/
+.call-phone {
+  z-index: 5;
+  position: fixed;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  top: 0%;
+  right: 0%;
+}
+
+.call-phone__circle-fill {
+  background-color: rgba(255, 0, 0, 1);
+  opacity: 0.75;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.1;
+  animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all 0.5s;
+}
+
+@keyframes call-phone__circle-fill-anim{
+  0%{transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.2  }
+  100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2  }
+}
+.call-phone__circle-img {
+  position: relative;
+  background-color: rgba(255,0,0,0.1);
+  width: 60px;
+  height: 60px;
+  top: 65px;
+  left: 65px;
+  position: absolute;
+  border: 5px solid rgba(255, 0, 0, 0.8);
+  border-radius: 50%;
+  border-radius: 100%;
+  opacity: 0.7;
+  animation: call-phone__circle-img-anim 1s infinite ease-in-out;
+}
+@keyframes call-phone__circle-img-anim{
+  0%{transform:rotate(0deg) scale(1) skew(1deg)  }
+  10%{transform:rotate(-25deg) scale(1) skew(1deg)  }
+  20%{transform:rotate(25deg) scale(1) skew(1deg)  }
+  30%{transform:rotate(-25deg) scale(1) skew(1deg)  }
+  40%{transform:rotate(25deg) scale(1) skew(1deg)  }
+  100%,50%{transform:rotate(0deg) scale(1) skew(1deg)  }
+}
+
+.icon-phone {
+  position: absolute;
+  z-index: 30;
+  font-size: 36px;
+  color: rgba(255, 0, 0,1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 0 5px 0;
+}
+
+/* Call active (picked up) */
+.call-phone__circle-fill_active {
+  background-color: rgba(0, 255, 0, 1);
+  opacity: 0.75;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.1;
+  animation: call-phone__circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all 0.5s;
+}
+
+@keyframes call-phone__circle-fill-anim_active{
+  0%{transform:rotate(0deg) scale(0.7) skew(1deg);
+    opacity:.2  }
+  50%{transform:rotate(0deg) scale(1) skew(1deg);
+    opacity:.2  }
+  100%{transform:rotate(0deg) scale(0.7) skew(1deg);opacity:.2  }
+}
+.call-phone__circle-img_active {
+  position: relative;
+  background-color: rgba(0, 255, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  top: 65px;
+  left: 65px;
+  position: absolute;
+  border: 5px solid rgba(0, 255, 0, 0.8);
+  border-radius: 50%;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+.icon-phone_active {
+  position: absolute;
+  z-index: 30;
+  font-size: 36px;
+  color: rgba(0, 255, 0, 1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 0 5px 0;
 }

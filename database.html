@@ -4,6 +4,7 @@
     <head>
         <script src="playAudios.js"></script>
     </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/database.css">
@@ -24,6 +25,22 @@
                 <span class="close">&times;</span>
                 <iframe src="puzzles/runner.html" height="200" width="400"></iframe>
             </div>
+        </div>
+
+        <!-- Phone call -->
+        <div id="call-phone" class="call-phone">
+            <div class="call-phone__circle-fill_active"></div>
+            <div class="call-phone__circle-img_active">
+              <i class="fa fa-phone icon-phone_active"></i>   
+            </div>
+        </div>
+
+        <!-- AI -->
+        <div id="ai">
+            <a class="ai float" id="aiBot">
+                <img src="ai/ai_happy.png" style="width: 100px; height: 100px;" alt="Button Image">
+                <i class="my-float"></i>
+            </a>
         </div>
 
 <div class="weapons">
@@ -155,12 +172,6 @@
             </table>
         </div>
     </div>
-    <div id="ai">
-        <a class="ai float" id="aiBot">
-            <img src="ai/ai_happy.png" style="width: 100px; height: 100px;" alt="Button Image">
-            <i class="my-float"></i>
-        </a>
-    </div>
     </body>
 </html>
 
@@ -168,6 +179,7 @@
 <script type="text/javascript" src="ai/ai.js"></script>
 <script type="text/javascript" src="js/puzzle.js"></script>
 <script>
+    disableRingtone();
     var btn = document.getElementById("puzzle3Btn");
     btn.addEventListener("click", function() {
         puzzle();

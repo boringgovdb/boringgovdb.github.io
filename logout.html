@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<script src="finish.js"></script>
 
 <html>
     <head>
         <script src="playAudios.js"></script>
     </head>
-    <link rel="stylesheet" href="css/index.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/logout.css">    
     <body class="main">
-            <div class='box'>
-                <h1 class="loginText">Congratulations</h1>
-                <p class="finishedText"> You escaped the program, with the nuclear code. If you aren't in the program, the chat AI doesn't exist</p>
-                <input type="button" class="enterButton" value="Finish" onclick=finish()></button>
+        <!-- Phone call -->
+        <div id="call-phone" class="call-phone">
+            <div class="call-phone__circle-fill_active"></div>
+            <div class="call-phone__circle-img_active">
+              <i class="fa fa-phone icon-phone_active"></i>   
+            </div>
+        </div>
+
+        <div class='box'>
+            <h1 class="loginText">Congratulations</h1>
+            <p class="finishedText"> You escaped the program, with the nuclear code. If you aren't in the program, the chat AI doesn't exist</p>
+            <input type="button" class="enterButton" value="Finish" onclick=finish()></button>
         </div>
     </body>
 </html>
 
 <script>
+    function finish() {
+        window.location.href = "index.html";
+    }
+    disableRingtone();
     playAudios(["sound/agent_If you log out and don't type the code in.mp3"]);
 </script>

@@ -12,8 +12,17 @@
         } );
         </script>
     </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
     <body class="main">
+
+        <!-- Phone call -->
+        <div id="call-phone" class="call-phone">
+            <div class="call-phone__circle-fill"></div>
+            <div class="call-phone__circle-img">
+              <i class="fa fa-phone icon-phone"></i>   
+            </div>
+        </div>
 
         <div id="draggable" class="ui-widget-content">
             <div class='box'>
@@ -29,5 +38,12 @@
 <script type="text/javascript" src="js/cookies.js"></script>
 <script>
     initCookie();
-    playAudios(["sound/agent_Introduction.mp3"]);
+    enableRingtone();
+
+    var phone = document.getElementById("call-phone");
+    phone.addEventListener("click", function() {
+        disableRingtone();
+        activeCall();
+        playAudios(["sound/agent_Introduction.mp3"]);
+    });
 </script>
